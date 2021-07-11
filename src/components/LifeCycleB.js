@@ -17,6 +17,19 @@ import React, { Component } from 'react'
      {
          console.log('LifeCycleB  componentDidMount')
      }
+     shouldComponentUpdate()
+     {
+         console.log('LifecycleA  shouldComponentUpdate')
+         return true
+     }
+     getSnapshotBeforeUpdate(prevProps,prevState){
+         console.log('LifeCycleA  getSnapshotBeforeUpdate ')
+         return null
+     }
+     componentDidUpdate()
+     {
+         console.log('LifeCycleA  componentDidUpdate ')
+     }
      
     render() {
         console.log('LifeCycleB render')

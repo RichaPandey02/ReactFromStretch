@@ -18,12 +18,31 @@ import LifeCycleB from './LifeCycleB'
      {
          console.log('LifeCycleA  componentDidMount')
      }
-     
+     shouldComponentUpdate()
+     {
+         console.log('LifecycleA  shouldComponentUpdate')
+         return true
+     }
+     getSnapshotBeforeUpdate(prevProps,prevState){
+         console.log('LifeCycleA  getSnapshotBeforeUpdate ')
+         return null
+     }
+     componentDidUpdate()
+     {
+         console.log('LifeCycleA  componentDidUpdate ')
+     }
+     changestate()
+     {
+         this.setState({
+             name:'codevolution'
+         })
+     }
     render() {
         console.log('LifeCycleA render')
         return (
             
             <div>
+                <button onClick={()=>this.changestate()}>ChangeState</button>
                 <LifeCycleB/>
             </div>
         )
