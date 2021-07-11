@@ -10,6 +10,7 @@ import Eventbind from './components/Eventbind';
 import Parentcomp from './components/Parentcomp';
 import UserGreeting from './components/UserGreeting';
 import Form from './components/Form';
+import LifecycleA from './components/LifecycleA';
 function App() {
   return (
     <div className="App">
@@ -28,7 +29,8 @@ function App() {
       {/* <Eventbind/> */}
       {/* <Parentcomp/> */}
       {/* < UserGreeting/> */}
-      <Form/>
+      {/* <Form/> */}
+      <LifecycleA/>
     </div>
    
   );
