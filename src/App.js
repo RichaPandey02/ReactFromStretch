@@ -11,6 +11,7 @@ import Parentcomp from './components/Parentcomp';
 import UserGreeting from './components/UserGreeting';
 import Form from './components/Form';
 import LifecycleA from './components/LifecycleA';
+import ParentComp1 from './components/ParentComp1';
 function App() {
   return (
     <div className="App">
@@ -30,7 +31,8 @@ function App() {
       {/* <Parentcomp/> */}
       {/* < UserGreeting/> */}
       {/* <Form/> */}
-      <LifecycleA/>
+      {/* <LifecycleA/> */}
+      <ParentComp1/>
     </div>
    
   );
